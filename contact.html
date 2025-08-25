@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-Smart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>E-Smart</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="index.html#download" class="nav-link">Download</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team - we're here to help</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions about E-Smart? Need help with your account or USSD banking? Our friendly support team is available 24/7 to assist you.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone Support</h3>
+                                <p>0800 FLEXI (35394)</p>
+                                <span>Available 24/7</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>support@esmart.co.za</p>
+                                <span>Response within 24 hours</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>USSD Support</h3>
+                                <p>*120*3274# then option 9</p>
+                                <span>Help menu available 24/7</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-comment"></i>
+                            <div>
+                                <h3>Live Chat</h3>
+                                <p>In-app messaging</p>
+                                <span>Available 24/7</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Financial District<br>Cape Town, 8001<br>South Africa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+27 XX XXX XXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="account">Account Issues</option>
+                                <option value="transaction">Transaction Problems</option>
+                                <option value="deposit">Deposit Issues</option>
+                                <option value="withdrawal">Withdrawal Problems</option>
+                                <option value="app">App Support</option>
+                                <option value="ussd">USSD Banking Help</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="business">Business Partnership</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Please describe your inquiry in detail..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I register for E-Smart?</h3>
+                    <p>Download our app and register with your phone number, or dial *120*3274# on any phone. You'll receive an OTP to verify your account - it's that simple!</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I use E-Smart without a smartphone?</h3>
+                    <p>Yes! Dial *120*3274# on any phone to access our USSD banking service. You can check balance, send money, buy airtime, and more.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Where can I deposit money?</h3>
+                    <p>You can deposit money at spaza shops, Pick n Pay, Boxer, Shoprite, Kazang agents, MoMo agents, and many other partner locations.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do eVouchers work?</h3>
+                    <p>Purchase an eVoucher at any participating location, and use it to withdraw cash at any ATM in South Africa - regardless of the bank.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is FlexiBank secure?</h3>
+                    <h3>Is E-Smart secure?</h3>
+                    <p>Yes! We use bank-level security, OTP verification, PIN protection, and encrypted transactions to keep your money and data safe on both app and USSD.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are there monthly fees?</h3>
+                    <p>No monthly fees! You only pay for the services you use, with transparent pricing and no hidden charges.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I lose my phone?</h3>
+                    <p>Contact our support team immediately. We can secure your account and help you regain access on a new device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>E-Smart</span>
+                    </div>
+                    <p>Banking made simple for everyone in South Africa. Register with just your phone number and access your money anywhere, anytime on any phone.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#how-it-works">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Money Transfer</a></li>
+                        <li><a href="#">Bill Payments</a></li>
+                        <li><a href="#">eVouchers</a></li>
+                        <li><a href="#">Airtime</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 E-Smart. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

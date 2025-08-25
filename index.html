@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Smart - Simple Banking with Just Your Phone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>E-Smart</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#download" class="nav-link">Download</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Banking Made Simple</h1>
+                <p>Register with just your phone number or use USSD on any phone. Deposit and withdraw anywhere in South Africa. No bank branches, no complex forms - just simple, secure banking for everyone.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">Download App</a>
+                    <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <span>E-Smart</span>
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="balance-card">
+                                <p>Available Balance</p>
+                                <h3>R 2,850.00</h3>
+                            </div>
+                            <div class="quick-actions">
+                                <div class="action-btn"><i class="fas fa-plus"></i> Deposit</div>
+                                <div class="action-btn"><i class="fas fa-minus"></i> Withdraw</div>
+                                <div class="action-btn"><i class="fas fa-paper-plane"></i> Send</div>
+                                <div class="action-btn"><i class="fas fa-shopping-cart"></i> Buy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose E-Smart?</h2>
+                <p>Experience the future of banking with our innovative, phone-first approach</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Phone Number Registration</h3>
+                    <p>No lengthy forms or documentation. Simply register with your phone number and OTP verification.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>USSD for Basic Phones</h3>
+                    <p>Don't have a smartphone? No problem! Use our USSD service by dialing *120*3274# on any phone to access your account.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Deposit Anywhere</h3>
+                    <p>Deposit money at spaza shops, Pick n Pay, Boxer, Shoprite, and many more locations nationwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h3>eVoucher Withdrawals</h3>
+                    <p>Purchase eVouchers at local spaza shops and withdraw cash at any ATM, regardless of your bank.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Safe</h3>
+                    <p>Bank-level security with OTP verification and encrypted transactions for complete peace of mind.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Access</h3>
+                    <p>Access your money anytime, anywhere. Our platform works around the clock for your convenience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Low Fees</h3>
+                    <p>Transparent, affordable fees with no hidden charges. More money stays in your pocket.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3>Universal Access</h3>
+                    <p>Works on smartphones, basic phones, and feature phones. Banking for everyone, regardless of device.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Multi-Language Support</h3>
+                    <p>Available in English, Afrikaans, Zulu, Xhosa, and other South African languages for easy access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="deposit-withdraw">
+        <div class="container">
+            <div class="section-header">
+                <h2>Deposit & Withdraw Options</h2>
+                <p>Multiple convenient ways to manage your money</p>
+            </div>
+            <div class="options-grid">
+                <div class="options-card">
+                    <h3><i class="fas fa-arrow-down"></i> Cash-In (Deposit)</h3>
+                    <ul class="options-list">
+                        <li><i class="fas fa-credit-card"></i> Bank Card</li>
+                        <li><i class="fas fa-university"></i> Ozow EFT</li>
+                        <li><i class="fas fa-store"></i> Pick n Pay</li>
+                        <li><i class="fas fa-store"></i> Boxer</li>
+                        <li><i class="fas fa-store"></i> Shoprite</li>
+                        <li><i class="fas fa-user-tie"></i> Kazang Agent</li>
+                        <li><i class="fas fa-user-tie"></i> MoMo Agent</li>
+                        <li><i class="fas fa-home"></i> Spaza Shop</li>
+                        <li><i class="fas fa-store"></i> Blu Merchant</li>
+                    </ul>
+                </div>
+                <div class="options-card">
+                    <h3><i class="fas fa-arrow-up"></i> Cash-Out (Withdraw)</h3>
+                    <ul class="options-list">
+                        <li><i class="fas fa-university"></i> EFT to Bank Account</li>
+                        <li><i class="fas fa-money-bill"></i> All Banks ATM - eVoucher</li>
+                        <li><i class="fas fa-store"></i> Pick n Pay</li>
+                        <li><i class="fas fa-money-bill"></i> Cash Express ATM</li>
+                        <li><i class="fas fa-user-tie"></i> Kazang Agent</li>
+                        <li><i class="fas fa-user-tie"></i> MoMo Agent</li>
+                        <li><i class="fas fa-home"></i> Spaza Shop</li>
+                        <li><i class="fas fa-store"></i> Blu Merchant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How E-Smart Works</h2>
+                <p>Simple steps to start your digital banking journey</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Your Method</h3>
+                        <p>Download our app for smartphones or dial *120*3274# on any phone. Register using only your phone number and verify with OTP.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Deposit Money</h3>
+                        <p>Visit any participating spaza shop, Pick n Pay, or other partners to deposit money into your account.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Use Your Money</h3>
+                        <p>Send money, buy airtime, pay bills, or purchase eVouchers for ATM withdrawals.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Withdraw at Any ATM</h3>
+                        <p>Purchase an eVoucher at your local spaza shop and withdraw cash at any ATM in South Africa - no bank restrictions!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ussd-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>USSD Banking - No Smartphone Needed</h2>
+                <p>Access E-Smart banking on any phone with our simple USSD service</p>
+            </div>
+            <div class="ussd-content">
+                <div class="ussd-info">
+                    <h3>How to Use USSD Banking</h3>
+                    <div class="ussd-steps">
+                        <div class="ussd-step">
+                            <div class="ussd-step-icon">1</div>
+                            <div class="ussd-step-text">
+                                <h4>Dial the Code</h4>
+                                <p>On any phone, dial <strong>*120*3274#</strong></p>
+                            </div>
+                        </div>
+                        <div class="ussd-step">
+                            <div class="ussd-step-icon">2</div>
+                            <div class="ussd-step-text">
+                                <h4>Follow the Menu</h4>
+                                <p>Select from options like Balance, Send Money, Buy Airtime</p>
+                            </div>
+                        </div>
+                        <div class="ussd-step">
+                            <div class="ussd-step-icon">3</div>
+                            <div class="ussd-step-text">
+                                <h4>Complete Transaction</h4>
+                                <p>Enter your PIN and confirm your transaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ussd-demo">
+                    <div class="phone-ussd">
+                        <div class="phone-screen-ussd">
+                            <div class="ussd-display">
+                                <div class="ussd-header">E-Smart USSD</div>
+                                <div class="ussd-menu">
+                                    <p>1. Check Balance</p>
+                                    <p>2. Send Money</p>
+                                    <p>3. Buy Airtime</p>
+                                    <p>4. Buy Data</p>
+                                    <p>5. Pay Bills</p>
+                                    <p>6. eVoucher</p>
+                                    <p>0. More Options</p>
+                                </div>
+                                <div class="ussd-footer">Reply with option number</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>E-Smart App Gallery</h2>
+                <p>Explore our user-friendly interface designed for everyone</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="app-screenshot">
+                        <div class="screenshot-content">
+                            <div class="app-bar">
+                                <span>E-Smart</span>
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="welcome-section">
+                                <h3>Welcome, John</h3>
+                                <p>Your balance: R 2,450.00</p>
+                            </div>
+                            <div class="quick-actions-grid">
+                                <div class="action-item"><i class="fas fa-plus"></i> Deposit</div>
+                                <div class="action-item"><i class="fas fa-minus"></i> Withdraw</div>
+                                <div class="action-item"><i class="fas fa-paper-plane"></i> Send</div>
+                                <div class="action-item"><i class="fas fa-mobile-alt"></i> Airtime</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Dashboard</h4>
+                    <p>Clean, intuitive home screen</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="app-screenshot">
+                        <div class="screenshot-content">
+                            <div class="app-bar">
+                                <i class="fas fa-arrow-left"></i>
+                                <span>Send Money</span>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="send-form">
+                                <div class="input-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" placeholder="+27 XX XXX XXXX" />
+                                </div>
+                                <div class="input-group">
+                                    <label>Amount</label>
+                                    <input type="text" placeholder="R 0.00" />
+                                </div>
+                                <button class="send-btn">Send Money</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Send Money</h4>
+                    <p>Quick and easy transfers</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="app-screenshot">
+                        <div class="screenshot-content">
+                            <div class="app-bar">
+                                <i class="fas fa-arrow-left"></i>
+                                <span>eVoucher</span>
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="evoucher-section">
+                                <div class="voucher-card">
+                                    <h3>ATM Withdrawal</h3>
+                                    <p>Amount: R 500.00</p>
+                                    <p>Code: 1234567890</p>
+                                    <p>Valid until: 24 hours</p>
+                                </div>
+                                <button class="new-voucher-btn">Create New eVoucher</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>eVoucher</h4>
+                    <p>ATM withdrawal codes</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="app-screenshot">
+                        <div class="screenshot-content">
+                            <div class="app-bar">
+                                <i class="fas fa-arrow-left"></i>
+                                <span>Transaction History</span>
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <div class="transaction-list">
+                                <div class="transaction-item">
+                                    <div class="transaction-icon green"><i class="fas fa-plus"></i></div>
+                                    <div class="transaction-details">
+                                        <p>Deposit at Spaza Shop</p>
+                                        <small>Today, 14:30</small>
+                                    </div>
+                                    <div class="transaction-amount">+R 200.00</div>
+                                </div>
+                                <div class="transaction-item">
+                                    <div class="transaction-icon red"><i class="fas fa-minus"></i></div>
+                                    <div class="transaction-details">
+                                        <p>ATM Withdrawal</p>
+                                        <small>Yesterday, 09:15</small>
+                                    </div>
+                                    <div class="transaction-amount">-R 500.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Transaction History</h4>
+                    <p>Track all your activities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2>Get E-Smart Today</h2>
+                    <p>Join thousands of South Africans who have simplified their banking experience. Download our app or use USSD *120*3274# on any phone.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play" />
+                        </a>
+                        <a href="#" class="download-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on App Store" />
+                        </a>
+                    </div>
+                    <div class="ussd-info-download">
+                        <p><strong>No smartphone?</strong> Dial <span class="ussd-code">*120*3274#</span> on any phone</p>
+                    </div>
+                </div>
+                <div class="download-image">
+                    <div class="phones-mockup">
+                        <div class="phone-1">
+                            <div class="phone-screen">
+                                <div class="screen-content">
+                                    <h4>Register</h4>
+                                    <div class="input-field">
+                                        <input type="text" placeholder="+27 XX XXX XXXX" />
+                                        <button>Send OTP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-2">
+                            <div class="phone-screen">
+                                <div class="screen-content">
+                                    <h4>Dashboard</h4>
+                                    <div class="balance">R 1,250.00</div>
+                                    <div class="mini-actions">
+                                        <span>Send</span>
+                                        <span>Receive</span>
+                                        <span>Buy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>E-Smart</span>
+                    </div>
+                    <p>Banking made simple for everyone in South Africa. Register with just your phone number or use USSD on any phone. Access your money anywhere, anytime.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Money Transfer</a></li>
+                        <li><a href="#">Bill Payments</a></li>
+                        <li><a href="#">eVouchers</a></li>
+                        <li><a href="#">Airtime</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 E-Smart. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
