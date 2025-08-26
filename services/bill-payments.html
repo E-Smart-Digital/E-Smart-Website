@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Payments - E-Smart</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>E-Smart</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#features" class="nav-link">Features</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="money-transfer.html">Money Transfer</a></li>
+                        <li><a href="bill-payments.html">Bill Payments</a></li>
+                        <li><a href="evouchers.html">eVouchers</a></li>
+                        <li><a href="airtime-data.html">Airtime & Data</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="service-hero-text">
+                    <h1>Pay All Your Bills in One Place</h1>
+                    <p>Never miss a payment again. Pay electricity, water, municipal bills, insurance, and more directly from your E-Smart account. Set up reminders and automate payments for peace of mind.</p>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Billers Available</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">R3</span>
+                            <span class="stat-label">Starting Fee</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Instant</span>
+                            <span class="stat-label">Processing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-hero-visual">
+                    <div class="bills-showcase">
+                        <div class="bill-icons">
+                            <div class="bill-icon eskom">
+                                <i class="fas fa-bolt"></i>
+                                <span>Eskom</span>
+                            </div>
+                            <div class="bill-icon municipal">
+                                <i class="fas fa-building"></i>
+                                <span>Municipal</span>
+                            </div>
+                            <div class="bill-icon water">
+                                <i class="fas fa-tint"></i>
+                                <span>Water</span>
+                            </div>
+                            <div class="bill-icon insurance">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Insurance</span>
+                            </div>
+                            <div class="bill-icon dstv">
+                                <i class="fas fa-tv"></i>
+                                <span>DStv</span>
+                            </div>
+                            <div class="bill-icon internet">
+                                <i class="fas fa-wifi"></i>
+                                <span>Internet</span>
+                            </div>
+                        </div>
+                        <div class="payment-flow">
+                            <div class="phone-bill-pay">
+                                <div class="phone-screen">
+                                    <div class="bill-ui">
+                                        <h4>Pay Bills</h4>
+                                        <div class="bill-item">
+                                            <i class="fas fa-bolt"></i>
+                                            <span>Eskom - R 450.00</span>
+                                            <button>Pay Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="supported-billers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Supported Bill Payments</h2>
+                <p>Pay hundreds of service providers across South Africa</p>
+            </div>
+            <div class="billers-grid">
+                <div class="biller-category">
+                    <div class="category-header">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Electricity</h3>
+                    </div>
+                    <ul class="biller-list">
+                        <li>Eskom</li>
+                        <li>City Power</li>
+                        <li>City of Cape Town</li>
+                        <li>eThekwini Municipality</li>
+                        <li>Tshwane Municipality</li>
+                        <li>Ekurhuleni Municipality</li>
+                    </ul>
+                </div>
+                <div class="biller-category">
+                    <div class="category-header">
+                        <i class="fas fa-building"></i>
+                        <h3>Municipal Services</h3>
+                    </div>
+                    <ul class="biller-list">
+                        <li>City of Johannesburg</li>
+                        <li>City of Cape Town</li>
+                        <li>eThekwini Municipality</li>
+                        <li>Nelson Mandela Bay</li>
+                        <li>Buffalo City</li>
+                        <li>Mangaung Municipality</li>
+                    </ul>
+                </div>
+                <div class="biller-category">
+                    <div class="category-header">
+                        <i class="fas fa-tv"></i>
+                        <h3>Entertainment</h3>
+                    </div>
+                    <ul class="biller-list">
+                        <li>DStv</li>
+                        <li>GOtv</li>
+                        <li>OpenView</li>
+                        <li>Netflix</li>
+                        <li>Showmax</li>
+                        <li>Amazon Prime</li>
+                    </ul>
+                </div>
+                <div class="biller-category">
+                    <div class="category-header">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Internet & Mobile</h3>
+                    </div>
+                    <ul class="biller-list">
+                        <li>Telkom</li>
+                        <li>Vodacom</li>
+                        <li>MTN</li>
+                        <li>Cell C</li>
+                        <li>Rain</li>
+                        <li>Afrihost</li>
+                    </ul>
+                </div>
+                <div class="biller-category">
+                    <div class="category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Insurance</h3>
+                    </div>
+                    <ul class="biller-list">
+                        <li>Old Mutual</li>
+                        <li>Sanlam</li>
+                        <li>Discovery</li>
+                        <li>Momentum</li>
+                        <li>Hollard</li>
+                        <li>Santam</li>
+                    </ul>
+                </div>
+                <div class="biller-category">
+                    <div class="category-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <ul class="biller-list">
+                        <li>University of Cape Town</li>
+                        <li>University of Witwatersrand</li>
+                        <li>Stellenbosch University</li>
+                        <li>UNISA</li>
+                        <li>Private Schools</li>
+                        <li>Training Institutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bill-payment-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Smart Bill Payment Features</h2>
+                <p>More than just payments - intelligent bill management</p>
+            </div>
+            <div class="features-showcase">
+                <div class="feature-large">
+                    <div class="feature-visual">
+                        <div class="app-mockup-large">
+                            <div class="app-screen">
+                                <div class="bills-dashboard">
+                                    <h4>My Bills</h4>
+                                    <div class="bill-summary">
+                                        <div class="upcoming-bills">
+                                            <div class="bill-item due-soon">
+                                                <i class="fas fa-bolt"></i>
+                                                <div class="bill-details">
+                                                    <span class="biller">Eskom</span>
+                                                    <span class="amount">R 450.00</span>
+                                                    <span class="due-date">Due in 2 days</span>
+                                                </div>
+                                                <div class="status-indicator warning"></div>
+                                            </div>
+                                            <div class="bill-item">
+                                                <i class="fas fa-tv"></i>
+                                                <div class="bill-details">
+                                                    <span class="biller">DStv</span>
+                                                    <span class="amount">R 399.00</span>
+                                                    <span class="due-date">Due in 5 days</span>
+                                                </div>
+                                                <div class="status-indicator good"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Smart Bill Tracking</h3>
+                        <p>Never miss a payment with intelligent reminders and due date tracking. See all your bills in one place with clear status indicators.</p>
+                        <ul class="feature-benefits">
+                            <li><i class="fas fa-check"></i> Automatic due date reminders</li>
+                            <li><i class="fas fa-check"></i> Bill history and analytics</li>
+                            <li><i class="fas fa-check"></i> Payment status tracking</li>
+                            <li><i class="fas fa-check"></i> Spending insights</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-large reverse">
+                    <div class="feature-visual">
+                        <div class="app-mockup-large">
+                            <div class="app-screen">
+                                <div class="auto-pay-setup">
+                                    <h4>AutoPay Setup</h4>
+                                    <div class="autopay-form">
+                                        <div class="biller-select">
+                                            <i class="fas fa-bolt"></i>
+                                            <span>Eskom</span>
+                                        </div>
+                                        <div class="autopay-options">
+                                            <div class="option selected">
+                                                <i class="fas fa-calendar"></i>
+                                                <span>Monthly on 25th</span>
+                                            </div>
+                                            <div class="amount-limit">
+                                                <span>Max: R 600.00</span>
+                                            </div>
+                                        </div>
+                                        <button class="setup-btn">Setup AutoPay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>AutoPay & Scheduling</h3>
+                        <p>Set up automatic payments for recurring bills. Choose your preferred dates and set spending limits for complete control.</p>
+                        <ul class="feature-benefits">
+                            <li><i class="fas fa-check"></i> Flexible scheduling options</li>
+                            <li><i class="fas fa-check"></i> Spending limits and controls</li>
+                            <li><i class="fas fa-check"></i> Easy pause/resume</li>
+                            <li><i class="fas fa-check"></i> Instant notifications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bill-payment-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Pay Bills</h2>
+                <p>Simple steps for both smartphone and basic phone users</p>
+            </div>
+            <div class="process-tabs">
+                <button class="tab-btn active" data-tab="app-bills">Smartphone App</button>
+                <button class="tab-btn" data-tab="ussd-bills">USSD (*120*3274#)</button>
+            </div>
+            <div class="tab-content active" id="app-bills">
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-visual">
+                            <div class="mini-phone">
+                                <div class="mini-screen">
+                                    <div class="dashboard-mini">
+                                        <div class="action-highlighted">Pay Bills</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Select Pay Bills</h3>
+                            <p>Open E-Smart app and tap "Pay Bills" from your dashboard</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-visual">
+                            <div class="mini-phone">
+                                <div class="mini-screen">
+                                    <div class="biller-search">
+                                        <input type="text" placeholder="Search billers..." />
+                                        <div class="biller-result">Eskom</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Choose Biller</h3>
+                            <p>Search and select your service provider from our extensive list</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-visual">
+                            <div class="mini-phone">
+                                <div class="mini-screen">
+                                    <div class="payment-form">
+                                        <input type="text" placeholder="Account number" />
+                                        <input type="text" placeholder="Amount" />
+                                        <button>Pay Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Enter Details & Pay</h3>
+                            <p>Add your account number, amount, and confirm payment with your PIN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="ussd-bills">
+                <div class="ussd-bill-flow">
+                    <div class="ussd-step-large">
+                        <div class="step-number">1</div>
+                        <div class="ussd-screen-large">
+                            <div class="ussd-display">
+                                <div class="ussd-header">E-Smart USSD</div>
+                                <div class="ussd-menu">
+                                    <p>1. Check Balance</p>
+                                    <p>2. Send Money</p>
+                                    <p>3. Buy Airtime</p>
+                                    <p>4. Pay Bills ←</p>
+                                    <p>5. eVoucher</p>
+                                    <p>0. More Options</p>
+                                </div>
+                                <div class="ussd-footer">Reply with 4</div>
+                            </div>
+                        </div>
+                        <p>Dial *120*3274# and select option 4 for Pay Bills</p>
+                    </div>
+                    <div class="ussd-step-large">
+                        <div class="step-number">2</div>
+                        <div class="ussd-screen-large">
+                            <div class="ussd-display">
+                                <div class="ussd-header">Select Biller</div>
+                                <div class="ussd-menu">
+                                    <p>1. Eskom</p>
+                                    <p>2. Municipal</p>
+                                    <p>3. DStv</p>
+                                    <p>4. Telkom</p>
+                                    <p>5. Insurance</p>
+                                    <p>0. More Billers</p>
+                                </div>
+                                <div class="ussd-footer">Choose biller</div>
+                            </div>
+                        </div>
+                        <p>Select your service provider from the list</p>
+                    </div>
+                    <div class="ussd-step-large">
+                        <div class="step-number">3</div>
+                        <div class="ussd-screen-large">
+                            <div class="ussd-display">
+                                <div class="ussd-header">Pay Eskom</div>
+                                <div class="ussd-menu">
+                                    <p>Account: 1234567890</p>
+                                    <p>Amount: R450.00</p>
+                                    <p>Fee: R5.50</p>
+                                    <p>Total: R455.50</p>
+                                    <p>1. Confirm</p>
+                                    <p>2. Cancel</p>
+                                </div>
+                                <div class="ussd-footer">Enter PIN to confirm</div>
+                            </div>
+                        </div>
+                        <p>Enter account details, confirm amount and pay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>E-Smart</span>
+                    </div>
+                    <p>Banking made simple for everyone in South Africa. Register with just your phone number and access your money anywhere, anytime on any phone.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="money-transfer.html">Money Transfer</a></li>
+                        <li><a href="bill-payments.html">Bill Payments</a></li>
+                        <li><a href="evouchers.html">eVouchers</a></li>
+                        <li><a href="airtime-data.html">Airtime & Data</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#features">Features</a></li>
+                        <li><a href="../index.html#how-it-works">How It Works</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 E-Smart. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

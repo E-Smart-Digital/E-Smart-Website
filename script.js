@@ -269,6 +269,214 @@ downloadButtons.forEach(button => {
     });
 });
 
+// Tab System for Service Pages
+document.addEventListener('DOMContentLoaded', function() {
+    // Method tabs (App vs USSD)
+    const methodTabs = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    methodTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Remove active class from all tabs and contents
+            methodTabs.forEach(t => t.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding content
+            this.classList.add('active');
+            const targetContent = document.getElementById(targetTab);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+    
+    // Bundle tabs (Network selection)
+    const bundleTabs = document.querySelectorAll('.bundle-tab');
+    const bundleContents = document.querySelectorAll('.bundle-content');
+    
+    bundleTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetNetwork = this.getAttribute('data-network');
+            
+            // Remove active class from all tabs and contents
+            bundleTabs.forEach(t => t.classList.remove('active'));
+            bundleContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding content
+            this.classList.add('active');
+            const targetContent = document.getElementById(targetNetwork);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+});
+
+// Enhanced App Gallery Hover Effects
+const serviceGalleryItems = document.querySelectorAll('.gallery-item');
+serviceGalleryItems.forEach(item => {
+    const screenshot = item.querySelector('.app-screenshot');
+    
+    item.addEventListener('mouseenter', () => {
+        screenshot.style.transform = 'scale(1.05) rotateY(5deg)';
+        screenshot.style.transition = 'all 0.3s ease';
+    });
+    
+    item.addEventListener('mouseleave', () => {
+        screenshot.style.transform = 'scale(1) rotateY(0deg)';
+    });
+});
+
+// Service Features Animation
+const serviceFeatures = document.querySelectorAll('.service-feature, .benefit-card, .bundle-card');
+serviceFeatures.forEach((feature, index) => {
+    feature.style.opacity = '0';
+    feature.style.transform = 'translateY(30px)';
+    feature.style.transition = 'all 0.6s ease';
+    feature.style.transitionDelay = `${index * 0.1}s`;
+    
+    observer.observe(feature);
+});
+
+// Transfer Animation
+const transferArrows = document.querySelectorAll('.transfer-arrow');
+transferArrows.forEach(arrow => {
+    setInterval(() => {
+        arrow.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+            arrow.style.transform = 'scale(1)';
+        }, 300);
+    }, 2000);
+});
+
+// Network Logo Animations
+const networkLogos = document.querySelectorAll('.network-logo, .bill-icon');
+networkLogos.forEach((logo, index) => {
+    logo.style.animationDelay = `${index * 0.2}s`;
+    logo.classList.add('float-animation');
+});
+
+// Add CSS for float animation
+const floatStyle = document.createElement('style');
+floatStyle.textContent = `
+    .float-animation {
+        animation: float-gentle 3s ease-in-out infinite;
+    }
+    
+    @keyframes float-gentle {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+`;
+document.head.appendChild(floatStyle);
+
+// Bundle Card Interactions
+const bundleOptions = document.querySelectorAll('.bundle-option');
+bundleOptions.forEach(option => {
+    option.addEventListener('click', function() {
+        // Remove selected class from siblings
+        const siblings = this.parentElement.querySelectorAll('.bundle-option');
+        siblings.forEach(sibling => sibling.classList.remove('selected'));
+        
+        // Add selected class to clicked option
+        this.classList.add('selected');
+        
+        // Add visual feedback
+        this.style.background = '#8b5cf6';
+        this.style.color = 'white';
+        this.style.transform = 'scale(1.02)';
+        
+        setTimeout(() => {
+            this.style.background = '';
+            this.style.color = '';
+            this.style.transform = '';
+        }, 200);
+    });
+});
+
+// eVoucher Code Animation
+const voucherCodes = document.querySelectorAll('.code, .voucher-code-large');
+voucherCodes.forEach(code => {
+    let currentCode = '1234567890';
+    
+    setInterval(() => {
+        // Generate random 10-digit code
+        const newCode = Math.floor(Math.random() * 10000000000).toString().padStart(10, '0');
+        
+        // Animate code change
+        code.style.opacity = '0.5';
+        setTimeout(() => {
+            code.textContent = newCode;
+            code.style.opacity = '1';
+        }, 150);
+    }, 5000);
+});
+
+// ATM Network Card Hover Effects
+const networkCards = document.querySelectorAll('.network-card');
+networkCards.forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.borderLeftWidth = '8px';
+        this.style.paddingLeft = '27px';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.borderLeftWidth = '5px';
+        this.style.paddingLeft = '30px';
+    });
+});
+
+// Service Stats Counter Animation
+const statNumbers = document.querySelectorAll('.stat-number');
+const animateCounter = (element, target, duration = 2000) => {
+    const start = 0;
+    const increment = target / (duration / 16);
+    let current = start;
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        
+        if (typeof target === 'number') {
+            element.textContent = Math.floor(current).toLocaleString();
+        } else {
+            element.textContent = target; // For non-numeric values like "24/7"
+        }
+    }, 16);
+};
+
+// Trigger counter animation when stats come into view
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const statNumber = entry.target;
+            const originalText = statNumber.textContent;
+            
+            // Extract number if present
+            const numberMatch = originalText.match(/\d+/);
+            if (numberMatch) {
+                const targetNumber = parseInt(numberMatch[0]);
+                animateCounter(statNumber, targetNumber);
+            }
+            
+            statsObserver.unobserve(statNumber);
+        }
+    });
+});
+
+statNumbers.forEach(stat => {
+    statsObserver.observe(stat);
+});
+
 // USSD Demo Animation
 const ussdDemo = document.querySelector('.ussd-display');
 if (ussdDemo) {
