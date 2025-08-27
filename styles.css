@@ -693,7 +693,7 @@ body {
 
 .mini-actions span {
     background: rgba(255, 255, 255, 0.2);
-    padding: 8px 12px;
+    padding: 6px 8px;
     border-radius: 15px;
 }
 
@@ -1270,7 +1270,7 @@ body {
 }
 
 .welcome-section p {
-    font-size: 14px;
+    font-size: 10px;
     opacity: 0.9;
 }
 
